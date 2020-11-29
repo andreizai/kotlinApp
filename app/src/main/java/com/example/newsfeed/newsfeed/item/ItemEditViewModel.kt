@@ -47,7 +47,7 @@ class ItemEditViewModel : ViewModel() {
             mutableFetching.value = true
             mutableException.value = null
             try {
-                if (item.id.isNotEmpty()) {
+                if (item._id.isNotEmpty()) {
                     mutableItem.value = ItemRepository.update(item)
                 } else {
                     mutableItem.value = ItemRepository.save(item)

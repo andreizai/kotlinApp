@@ -1,7 +1,7 @@
 package com.example.newsfeed.newsfeed.data
 
 data class Item(
-    val id: String,
+    val _id: String,
     var title: String,
     var text: String,
     var date: String,
